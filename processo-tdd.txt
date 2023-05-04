@@ -1,0 +1,1 @@
+O processo apresentado na figura disponível no arquivo aula2.md do repositório original apresenta como deve ser feito um processo TDD, começando a testar por um teste funcional e, em caso de falha ou necessidade de refatoração, criar testes unitários (conforme o TDD prevê) até que os testes funcionais voltem a passar.
