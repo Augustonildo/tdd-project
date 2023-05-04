@@ -1,0 +1,7 @@
+Testes Funcionais: 
+    1. Testam a aplicação do ponto de vista do usuário, replicando suas possíveis ações na aplicação
+    2. Poderá verificar em conjunto várias unidades diferentes do sistema
+
+Testes de Unidade:
+    1. Testes automatizados de partes pequenas do código, como um único método ou comportamento
+    2. Focado no ponto de vista do desenvolvedor.
