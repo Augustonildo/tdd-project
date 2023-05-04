@@ -18,7 +18,7 @@ class NewVisitorTest(unittest.TestCase):
 
         # Ela nota que o título da página menciona TODO
         self.assertIn('To-Do', self.browser.title)
-        header_text = self.browser.find_element("name",'h1').text  
+        header_text = self.browser.find_element("tag name",'h1').text  
         self.assertIn('To-Do', header_text)
 
         # Ela é convidada a entrar com um item TODO imediatamente
@@ -34,9 +34,10 @@ class NewVisitorTest(unittest.TestCase):
         time.sleep(1)
         
         table = self.browser.find_element("id", 'id_list_table')
-        rows = table.find_elements("tag", 'tr')  
+        rows = table.find_elements("tag name", 'tr')  
         self.assertTrue(
-            any(row.text == '1: Estudar testes funcionais' for row in rows)
+            any(row.text == '1: Estudar testes funcionais' for row in rows),
+            "New to-do item did not appear in table"
         )
         
         # Ainda existe uma caixa de texto convidando para adicionar outro item
